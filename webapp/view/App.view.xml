@@ -1,0 +1,7 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+
+<!--App is an container control 
+    Container Control is used to add multiple pages inside the container-->
+    <App id="zappid">
+    </App>
+</mvc:View>

@@ -1,0 +1,71 @@
+<mvc:View xmlns:control="sap.gantt.control" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" controllerName="com.ui5.poc.app.controller.viewcontroller1">
+    <Page backgroundDesign="Solid" showHeader="false">
+        <HBox>
+            <Image src="./images/centimarklogo.PNG" width="50%" />
+        </HBox>
+
+        <content>
+            <RadioButtonGroup id="rbg1" columns="4" width="600%" class="sapUiMediumMarginBottom">
+                <RadioButton id="RadioBtn1" text="Stock" select="onselect" />
+                <RadioButton id="RadioBtn2" text="Non-Stock" select="onselect" />
+            </RadioButtonGroup>
+        </content>
+
+        <Label id="labelid" width="100%" design="Bold" />
+        <!--Check for NameSpace ZCore it shoud be same as declared in MODULE (up)-->
+
+        <!--
+               	<Select
+					selectedKey="{/type}"
+					items="{
+						path:'/materials'
+					}">
+					<core:Item key="{type}" text="{type}"/>
+				</Select>
+         -->
+
+        
+        <f:SimpleForm id="zsimpleformid" width="50%">
+            <f:content>
+                <Select selectedKey="{type}" forceSelection="false">
+                    <items>
+                        <core:Item text="Counter-Flashing 6'" key="type" />
+                        <core:Item text="1/2 Plywod Sheet 4x8" key="type" />
+                        <core:Item text="Counter-Flashing 4'" />
+                        <core:Item text="Drain 6' U Flow" />
+                        <core:Item text="Drain Retrofit Insert 3'" />
+                        <core:Item text="Drain Retrofit Insert 4'" />
+                    </items>
+                </Select>
+            </f:content>
+        </f:SimpleForm>
+       
+
+        <f:SimpleForm id="zsimpleformid2">
+            <f:content>
+                <TextArea width="60%" height="20%" maxLength="70" />
+            </f:content>
+        </f:SimpleForm>
+
+        <f:SimpleForm id="zsimpleformid3">
+
+            <VBox  id="canvasid"></VBox>
+            <VBox>
+                <FlexBox height="100px" alignItems="Start" justifyContent="Start">
+                    <ImageContent src="./images/camera_icon.png" description="Add Photo" press="onpress" />
+                    <ImageContent src="./images/delete-icon.png" description="Delete Photo" press="ondelete" />
+                </FlexBox>
+            </VBox>
+        </f:SimpleForm>
+
+        <footer>
+            <OverflowToolbar>
+                <ToolbarSpacer />
+                <Button text="Save" TextDirection="LTR" type="Accept"  />
+                <Button text="Clear" id="btnid" type="Attention"  />
+                <Button text="Cancel" type="Reject" />
+                
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>

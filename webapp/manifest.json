@@ -1,0 +1,53 @@
+{
+    "sap.app": {
+        "id": "com.ui5.poc.app",
+        "type": "application",
+        "ach": "Generic.poc",
+        "title": "POC Title",
+        "description": "POC Title description",
+        "applicationVersion": {
+            "version": "1.0.0"
+        }
+    },
+    "sap.ui": {
+        "supportedThemes": [
+            "sap_fiori_3_dark",
+            "sap.horizon"
+        ],
+        
+        "deviceTypes": {
+            "desktop": true,
+            "mobile": true,
+            "tablet": true
+        },
+        "technology": "ui5"
+    },
+    "sap.ui5": {
+        "dependencies": {
+            "minUI5version": "1.100.2",
+            "libs": {
+                "sap.m": {
+                    "minversion": "1.100.2"
+                },
+                "sap.ui.core": {
+                    "minversion": "1.100.2"
+                },
+                "sap.ui.layout": {
+                    "minversion": "1.100.2"
+                }
+            },
+            "models": {
+                " ": {
+                    "type": "sap.ui.model.json.JSONModel",
+                    "uri": "model/mockdata/material.json",
+                    "settings": ""
+                }
+            },
+
+            "contentDensities":{
+                    "compact": "true",
+                    "cozy": "true"
+            }
+        }
+    }
+}
