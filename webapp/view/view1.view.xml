@@ -6,8 +6,8 @@
 
         <content>
             <RadioButtonGroup id="rbg1" columns="4" width="500%" class="sapUiMediumMarginBottom">
-                <RadioButton id="RadioBtn1" text="Stock" select="onselect" />
-                <RadioButton id="RadioBtn2" text="Non-Stock" select="onselect" />
+                <RadioButton id="RadioBtn1" text="Stocks" select="onselect" />
+                <RadioButton id="RadioBtn2" text="Non-Stocks" select="onselect" />
             </RadioButtonGroup>
         </content>
 
